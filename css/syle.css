@@ -27,6 +27,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: none;
 }
 
 #carousel .arrow {
@@ -42,4 +43,8 @@
 
 #next {
     bottom: 5%;
+}
+
+#carousel img.active {
+    display: block;
 }
