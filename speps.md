@@ -23,9 +23,18 @@
 
 - Inizio
 - Recupero la gallerry dal DOM
+- Recupero previous e nex buttons dal DOM
 - Creo una array contenete le liste di indirizzi delle immagini
-- Creo un tag img per le immmagini
+- Creo un tag img per ogni immmagine
 - Inserisco le immagini nel Dom
 - Recupero tutte le immagini
 - Assegno la classe active alla prima immagine di partenza
+- Creo un Event Listenere click per previous button
+- se sono alla prima immagine interrompo la funzione (per non andare indietro)
+- Rimuovo la classe active all' immagine corrispondente
+- Aggiungo la casse active all'immagine corrispondente
+- Creo un Event Listenere click per next button
+- se sono all'ultima immagine interrompo la funzione (per non andare avanti)
+- Rimuovo la classe active all' immagine corrispondente
+- Aggiungo la casse active all'immagine corrispondente
 - Fine
