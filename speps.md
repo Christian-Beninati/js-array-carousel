@@ -30,11 +30,11 @@
 - Recupero tutte le immagini
 - Assegno la classe active alla prima immagine di partenza
 - Creo un Event Listenere click per previous button
-- se sono alla prima immagine interrompo la funzione (per non andare indietro)
 - Rimuovo la classe active all' immagine corrispondente
+- Se sono alla prima immagine (creo un ciclo infinito)
 - Aggiungo la casse active all'immagine corrispondente
 - Creo un Event Listenere click per next button
-- se sono all'ultima immagine interrompo la funzione (per non andare avanti)
 - Rimuovo la classe active all' immagine corrispondente
+- Se sono all'ultima immagine (creo un ciclo infinito)
 - Aggiungo la casse active all'immagine corrispondente
 - Fine

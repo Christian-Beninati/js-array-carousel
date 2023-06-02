@@ -37,14 +37,17 @@ images[currentIndex].classList.add('active');
 
 // Metto in ascolto il previous
 previousButton.addEventListener('click', function () {
-    // Quando solo alla prima immagine interrompo la funzione
-    if (currentIndex === 0 ) return;
     
     // Rimuovo la classe active all'immagine corrispondente al currentIndex
     images[currentIndex].classList.remove('active');
 
     // Decremento il current index
     currentIndex--;
+
+    // Se currentIndex diventa un valore negativo, lo imposto all'ultima immagine
+    if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+    }
 
     // Aggiungo la classe active all'immagine corrispondente al nuovo currentIndex
     images[currentIndex].classList.add('active');
@@ -54,14 +57,17 @@ previousButton.addEventListener('click', function () {
 
 // Metto in ascolto il next
 nextButton.addEventListener('click', function () {
-    // Quando solo all'ultima immagine interrompo la funzione
-    if (currentIndex === images.length - 1 ) return;
     
     // Rimuovo la classe active all'immagine corrispondente al currentIndex
     images[currentIndex].classList.remove('active');
 
     // incrementoo il current index
     currentIndex++;
+
+    // Se currentIndex supera l'indice dell'ultima immagine, lo imposto alla prima immagine
+    if (currentIndex >= images.length) {
+        currentIndex = 0;
+    }
 
     // Aggiungo la classe active all'immagine corrispondente al nuovo currentIndex
     images[currentIndex].classList.add('active');
